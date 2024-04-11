@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Notes App</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <note-header title="Catatan Sederhana"></note-header>
+    <!-- End of Header -->
+
+    <!-- Form Input -->
+    <note-form></note-form>
+    <!-- End of form input -->
+
+    <!-- Note List -->
+    <div class="note-app__body">
+      <!-- Aktif note -->
+      <h2>Catatan Aktif</h2>
+      <div id="activeNotesList" class="notes-list"></div>
+
+      <!-- Arsip note -->
+      <h2>Arsip</h2>
+      <div id="archivedNotesList" class="notes-list"></div>
+    </div>
+    <!-- End of Note List -->
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/util.js"></script>
+    <script src="./assets/js/components/noteHeader.js"></script>
+    <script src="./assets/js/components/noteForm.js"></script>
+    <script src="./assets/js/components/noteItem.js"></script>
+  </body>
+</html>
